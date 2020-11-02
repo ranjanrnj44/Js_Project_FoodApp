@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Responsive site">
+        <meta name="keywords" content="HTML,CSS,JS">
+        <meta name="author" content="Ranjan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--css file-->
+        <link rel="stylesheet" href="style.css"/>
+        <!--css file-->
+
+        <title>Recipe</title>
+
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bree+Serif|Exo|Exo+2|Lato|Mansalva|Playfair+Display&display=swap" rel="stylesheet">
+        <!--google fonts-->
+
+        <!--fontawesome icon start-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <!--fontawesome icon end-->
+    </head>
+
+    <body>
+		<!--our main content goes here STAR-->
+		<main> 
+			<!--article START-->
+			<article class="main_mobile_container">
+
+				<!--section HEADER START-->
+				<section class="heading">
+					<input type="text" id="search_term" placeholder="Search..."/>
+					<button type="button" id="search"><i class="fa fa-search"></i></button>
+				</section>
+				<!--section HEADER END-->
+
+				<!--section FAV MEAL START-->
+				<section class="fav_container">
+					<h3>Favorite Foods</h3>
+					<div id="empty_text"></div>
+					<ul class="fav_meals" id="fav_meals">
+						
+					</ul>
+				</section>
+				<!--section FAV MEAL END-->
+
+				<!--section RANDOM MEAL START-->
+				<section id="meals">
+
+				</section>
+				<!--section RANDOM MEAL END-->
+
+				<!--section POPUP RECIPE PROCESS START-->
+				<section class="popup_container hidden" id="meal_popup">
+					<div class="popup">
+						<button id="close_popup"><i class="far fa-times-circle"></i></button>
+						
+						<div id="meal_info" class="meal_info">
+							
+						</div>
+
+					 </div>
+				</section>
+				<!--section POPUP RECIPE PROCESS END-->
+
+			</article>
+			<!--article END-->
+
+		</main>
+		<!--main content END-->
+
+	<!--footer START-->
+	<footer>
+	</footer>
+    <!--footer END-->
+    
+    <!--Javascript START-->
+    <script src="./script.js" defer></script>
+    <!--Javascript END-->
+
+	</body>
+</html>

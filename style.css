@@ -1,0 +1,202 @@
+/*universal selector start*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e1e1e1;
+    background-image: linear-gradient(45deg, #e2dbdb 1%, #f7f7e2 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 1rem;
+}
+/*universal selector end*/
+
+/**/
+.main_mobile_container{
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px black;
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+}
+/**/
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: white;
+}
+.heading input{
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+.heading button{
+    background-color: transparent;
+    border: none;
+    color : #aaa;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.heading button:hover{
+    color: green;
+}
+/**/
+
+/**/
+.fav_container{
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    background-color: rgb(229, 227, 227);
+}
+.fav_container h3{
+    padding: 1.3rem 0;
+}
+.fav_meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    cursor: pointer;
+}
+.fav_meals li{
+    width: 85px;
+    margin: 5px;
+    position: relative;
+}
+.fav_meals li span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+    display: inline-block;
+}
+.fav_meals li #clear{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    cursor: pointer;
+}
+.fav_meals li #clear:hover{
+    color: red;
+}
+.fav_meals img{
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.fav_meals span{ 
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+/**/
+
+/**/
+.meal{
+    margin: 1rem;
+    box-shadow: 0 0 10px 2px black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.meal_header{
+    position: relative;
+}
+.meal_header .random_text{
+    position: absolute;
+    top: 15px;
+    background-color: whitesmoke;
+    padding: 7px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.meal_header img{
+    object-fit: cover;
+    width: 100%;
+    height: 260px;
+}
+.meal_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: rgb(229, 227, 227);
+}
+.meal_body h4{
+    margin: 0px;
+    font-weight: bold;
+    padding: 3px;
+}
+.meal_body button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(148, 148, 148);
+}
+.meal_body .fav_btn.active{
+    color: red;
+}
+
+#empty_text p{
+    font-style: italic;
+}
+
+.popup_container{
+    position: fixed;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup_container.hidden{
+    opacity: 0;
+    pointer-events: none; /*React to pointer events, like clickable or just like random text*/
+}
+.popup{
+    background-color: whitesmoke;
+    max-width: 450px;
+    max-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    overflow: auto;
+}
+.popup #close_popup{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.popup #close_popup:hover{
+    color: red;
+}
+
+.meal_info h1{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.meal_info .ingredient_li{
+    margin-left: 2rem;
+}
+/**/ 
